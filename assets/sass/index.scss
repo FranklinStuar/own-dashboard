@@ -1,19 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-$primary-color:#218173;
-$secundary-color:#7ec7ae;
-$tertiary-color:#d3dedc;
-$fourtiary-color:#98bbd6;
-$fivetiary-color:#487b94;
-$accent-color:#218173;
-$error-color:#C61818;
-$white:#fff;
-$black:#000;
-$dark-color:#202020;
-$light-color:#fafafa;
-$sidebaropen:250px;
-$sidebar-compact:50px;
-
+@import "variables";
+@import "mixins";
 body{
     font-family: 'Poppins', sans-serif;
     color: $dark-color;
@@ -22,74 +10,10 @@ body{
 body, div{
     box-sizing: border-box;
 }
-.sidebar{
-    width: $sidebaropen;
-    height: 100vh;
-    background-color: $primary-color;
-    overflow-y: auto;
-    position: fixed;
-    &::-webkit-scrollbar{
-        background-color: $secundary-color;
-        width: 8px;
-        border-left: 1px solid $secundary-color;
-    }
-    &::-webkit-scrollbar-thumb{
-        background-color: $primary-color;
-        border: 1px solid $tertiary-color;
-        border-radius: 50px;
-    }
-    & a{
-        text-decoration: none;
-    }
-    & .logo{
 
-        & a{
-            color: $light-color;
-            position: relative;
-            display: block;
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
-        & a .icon{
-            padding: 5px 15px;
-            font-size: 20px;
-        }
-    } 
-    & nav ul{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    & nav ul li.title{
-        font-weight: 600;
-        padding: 10px 10px;
-    }
-    & nav ul li.separator{
-        padding-top: 10px;
-        border-bottom: 1px solid $tertiary-color;
-    }
-    & nav ul a{
-        position: relative;
-        display: block;
-        padding: 10px 20px;
-        transition: 0.3s;
-        color: $tertiary-color;
-    }
-    & nav ul a:hover{
-        background-color: $secundary-color;
-        font-weight: 600;
-    }
-    & nav ul li.active a,
-    & nav ul a:hover{
-        background-color: $secundary-color;
-        color: $light-color;
-        font-weight: 600;
-    }
-    & nav ul a .icon{
-        padding-right: 15px;
-    }
-}
+@import "fonts";
+@import "sidebar";
+
 /*main*/
 .main{
     position: relative;
@@ -98,37 +22,19 @@ body, div{
     background-color: $white;
     width: calc(100% - #{$sidebaropen});
 }
-.main .topbar{
-    width: 100%;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .12);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;   
+@import "topbar";
+.container{
+    padding: 20px;
 }
-.topbar a{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    text-align: start;
+.panel{
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
     padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    text-decoration: none;
-    color: $dark-color;
-}
-.topbar .business a{
-    display: block;
-}
-.topbar a:hover{
-    background: $tertiary-color;
-}
-.topbar .business a span{ 
-    display: block;
-    font-size: 18px;
-    font-weight: 600;
-}
-.topbar .business a .identification{ 
-    font-size: 14px;
-    font-weight: 500;
+    &-header{
+        border-bottom: 1px solid $tertiary-color;
+    }
+    &-body{
+        padding: 10px 0;
+    }
 }

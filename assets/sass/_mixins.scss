@@ -1,0 +1,12 @@
+@mixin font ($font-size,$font-weight,
+$text-decoration:none,$text-align:start,
+$line-height:normal,$letter-spacing:normal,
+$text-transform:none) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    text-decoration: $text-decoration;
+    text-align: $text-align;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    text-transform: $text-transform;
+}

@@ -1,2 +1,215 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");body{font-family:'Poppins', sans-serif;color:#202020;padding:0}body,div{-webkit-box-sizing:border-box;box-sizing:border-box}.sidebar{width:250px;height:100vh;background-color:#218173;overflow-y:auto;position:fixed}.sidebar::-webkit-scrollbar{background-color:#7ec7ae;width:8px;border-left:1px solid #7ec7ae}.sidebar::-webkit-scrollbar-thumb{background-color:#218173;border:1px solid #d3dedc;border-radius:50px}.sidebar a{text-decoration:none}.sidebar .logo a{color:#fafafa;position:relative;display:block;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.sidebar .logo a .icon{padding:5px 15px;font-size:20px}.sidebar nav ul{list-style:none;padding:0;margin:0}.sidebar nav ul li.title{font-weight:600;padding:10px 10px}.sidebar nav ul li.separator{padding-top:10px;border-bottom:1px solid #d3dedc}.sidebar nav ul a{position:relative;display:block;padding:10px 20px;-webkit-transition:0.3s;transition:0.3s;color:#d3dedc}.sidebar nav ul a:hover{background-color:#7ec7ae;font-weight:600}.sidebar nav ul li.active a,.sidebar nav ul a:hover{background-color:#7ec7ae;color:#fafafa;font-weight:600}.sidebar nav ul a .icon{padding-right:15px}.main{position:relative;left:250px;height:100vh;background-color:#fff;width:calc(100% - 250px)}.main .topbar{width:100%;-webkit-box-shadow:0 4px 10px 0 rgba(0,0,0,0.12);box-shadow:0 4px 10px 0 rgba(0,0,0,0.12);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:5px 20px}.topbar a{background-color:transparent;border:none;outline:none;text-align:start;padding:10px 20px;border-radius:8px;cursor:pointer;text-decoration:none;color:#202020}.topbar .business a{display:block}.topbar a:hover{background:#d3dedc}.topbar .business a span{display:block;font-size:18px;font-weight:600}.topbar .business a .identification{font-size:14px;font-weight:500}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #202020;
+  padding: 0;
+}
+
+body, div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p, span, div, li {
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: start;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: start;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: start;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: start;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #218173;
+  overflow-y: auto;
+  position: fixed;
+}
+
+.sidebar::-webkit-scrollbar {
+  background-color: #7ec7ae;
+  width: 8px;
+  border-left: 1px solid #7ec7ae;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #218173;
+  border: 1px solid #d3dedc;
+  border-radius: 50px;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebar .logo a {
+  color: #202020;
+  position: relative;
+  display: block;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .logo a .icon {
+  padding: 5px 15px;
+  font-size: 20px;
+}
+
+.sidebar .logo a .title * {
+  font-size: 25px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li.title {
+  font-weight: 600;
+  padding: 10px 10px;
+}
+
+nav ul li.separator {
+  padding-top: 10px;
+  border-bottom: 1px solid #d3dedc;
+}
+
+nav ul a {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #d3dedc;
+}
+
+nav ul a:hover {
+  background-color: #7ec7ae;
+  font-weight: 600;
+}
+
+nav ul li.active a,
+nav ul a:hover {
+  background-color: #7ec7ae;
+  color: #fafafa;
+  font-weight: 600;
+}
+
+nav ul a .icon {
+  padding-right: 15px;
+}
+
+/*main*/
+.main {
+  position: relative;
+  left: 250px;
+  height: 100vh;
+  background-color: #fff;
+  width: calc(100% - 250px);
+}
+
+.topbar {
+  width: 100%;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 20px;
+}
+
+.topbar a {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: start;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #202020;
+}
+
+.topbar a:hover {
+  background: #7ec7ae;
+}
+
+.topbar .business a {
+  display: block;
+}
+
+.topbar .business a span {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.topbar .business a .identification {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.container {
+  padding: 20px;
+}
+
+.panel {
+  display: block;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  padding: 10px 20px;
+}
+
+.panel-header {
+  border-bottom: 1px solid #d3dedc;
+}
+
+.panel-body {
+  padding: 10px 0;
+}
 /*# sourceMappingURL=index.css.map */

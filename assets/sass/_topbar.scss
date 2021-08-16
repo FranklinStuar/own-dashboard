@@ -1,0 +1,35 @@
+
+.topbar{
+    width: 100%;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;   
+    & a{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        text-align: start;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        color: $dark-color;
+    }
+    & a:hover{
+        background: $secundary-color;
+    }
+    & .business a{
+        display: block;
+    }
+    & .business a span{ 
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    & .business a .identification{ 
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

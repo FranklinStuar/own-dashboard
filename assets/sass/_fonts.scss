@@ -1,0 +1,12 @@
+p,span,div,li{
+    @include font($font-size-text,400) ;
+}
+h1{
+    @include font($font-size-primary,400) ;
+}
+h2{
+    @include font($font-size-secundary,700) ;
+}
+.btn{
+    @include font($font-size-text,500) ;
+}

@@ -1,0 +1,71 @@
+.sidebar{
+    width: $sidebaropen;
+    height: 100vh;
+    background-color: $primary-color;
+    overflow-y: auto;
+    position: fixed;
+    &::-webkit-scrollbar{
+        background-color: $secundary-color;
+        width: 8px;
+        border-left: 1px solid $secundary-color;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $primary-color;
+        border: 1px solid $tertiary-color;
+        border-radius: 50px;
+    }
+    & a{
+        text-decoration: none;
+    }
+    & .logo{
+
+        & a{
+            color: $dark-color;
+            position: relative;
+            display: block;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        & a .icon{
+            padding: 5px 15px;
+            font-size: 20px;
+        }
+        & a .title *{
+            font-size: 25px;
+        }
+    } 
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    & li.title{
+        font-weight: 600;
+        padding: 10px 10px;
+    }
+    & li.separator{
+        padding-top: 10px;
+        border-bottom: 1px solid $tertiary-color;
+    }
+    & a{
+        position: relative;
+        display: block;
+        padding: 10px 20px;
+        transition: 0.3s;
+        color: $tertiary-color;
+    }
+    & a:hover{
+        background-color: $secundary-color;
+        font-weight: 600;
+    }
+    & li.active a,
+    & a:hover{
+        background-color: $secundary-color;
+        color: $light-color;
+        font-weight: 600;
+    }
+    & a .icon{
+        padding-right: 15px;
+    }
+}
