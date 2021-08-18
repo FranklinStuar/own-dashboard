@@ -42,12 +42,85 @@ body, div{
 .no-padding{
     padding: 0;
 }
-
+.btn{
+    background-color: $primary-color;
+    color: $light-color;
+    border-radius: 4px;
+}
 
 .card{
-    &-body{
+    &__body{
         width: 100%;
-        background-color: cadetblue;
     }
+    &__icon{
+        display: block;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.8em;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: $fivetiary-color;
+    }
+    &-body__price{
+        display: block;
+        font-size: 30px;
+        color: $dark-color;
+        text-align: center;
+        width: 100%;
+        line-height: 80px;
+    }
+    &-body__title{
+        line-height: 40px;
+        text-align: center;
+        font-weight: 600;
+        color: $dark-color;
+        display: block;
+    }
+
+    min-height: 120px;
+    position: relative;
     
+    &.card-item{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0 0 0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
 } 
+.bg{
+    &__default{
+        background-color: rgba(0,0,0,0.08);
+    }
+    &__green{
+        background-color: $primary-color;
+    }
+    &__danger{
+        background-color: $error-color;
+    }
+    &__teal{
+        background-color: $teal-color;
+    }
+    &__blue{
+        background-color: $blue-color;
+    }
+    &__yellow{
+        background-color: $yellow-color;
+    }
+    &__orange{
+        background-color: $orange-color;
+    }
+}
+.color{
+    &__white{
+        color: $light-color;
+    }
+    &__dark{
+        color: $dark-color;
+    }
+}

@@ -442,8 +442,100 @@ nav ul a .icon {
   padding: 0;
 }
 
-.card-body {
+.btn {
+  background-color: #218173;
+  color: #fafafa;
+  border-radius: 4px;
+}
+
+.card {
+  min-height: 120px;
+  position: relative;
+}
+
+.card__body {
   width: 100%;
-  background-color: cadetblue;
+}
+
+.card__icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.8em;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #487b94;
+}
+
+.card-body__price {
+  display: block;
+  font-size: 30px;
+  color: #202020;
+  text-align: center;
+  width: 100%;
+  line-height: 80px;
+}
+
+.card-body__title {
+  line-height: 40px;
+  text-align: center;
+  font-weight: 600;
+  color: #202020;
+  display: block;
+}
+
+.card.card-item {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0 0 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bg__default {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.bg__green {
+  background-color: #218173;
+}
+
+.bg__danger {
+  background-color: #f44336;
+}
+
+.bg__teal {
+  background-color: #00bfa5;
+}
+
+.bg__blue {
+  background-color: #0091ea;
+}
+
+.bg__yellow {
+  background-color: #ffa726;
+}
+
+.bg__orange {
+  background-color: #f57f17;
+}
+
+.color__white {
+  color: #fafafa;
+}
+
+.color__dark {
+  color: #202020;
 }
 /*# sourceMappingURL=index.css.map */
