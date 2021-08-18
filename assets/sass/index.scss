@@ -13,6 +13,7 @@ body, div{
 
 @import "fonts";
 @import "sidebar";
+@import "columns";
 
 /*main*/
 .main{
@@ -38,3 +39,15 @@ body, div{
         padding: 10px 0;
     }
 }
+.no-padding{
+    padding: 0;
+}
+
+
+.card{
+    &-body{
+        width: 100%;
+        background-color: cadetblue;
+    }
+    
+} 

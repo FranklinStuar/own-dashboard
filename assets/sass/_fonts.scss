@@ -1,6 +1,9 @@
 p,span,div,li{
     @include font($font-size-text,400) ;
 }
+strong{
+    @include font($font-size-text,600) ;
+}
 h1{
     @include font($font-size-primary,400) ;
 }
