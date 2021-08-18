@@ -362,6 +362,39 @@ nav ul a .icon {
   }
 }
 
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.table thead th, .table tfoot th {
+  text-align: start;
+  font-weight: 600;
+}
+
+.table td, .table th {
+  padding: 9px 5px;
+}
+
+.table.table-bordered thead tr, .table.table-bordered tbody tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table.table-bordered tbody tr:last-child {
+  border-bottom: none;
+}
+
+.table.table-bordered tfoot tr {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table.table-hover tbody tr:hover {
+  background: #7ec7ae;
+  color: #ffffff;
+}
+
 /*main*/
 .main {
   position: relative;

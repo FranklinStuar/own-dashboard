@@ -14,6 +14,7 @@ body, div{
 @import "fonts";
 @import "sidebar";
 @import "columns";
+@import "table";
 
 /*main*/
 .main{
@@ -124,3 +125,4 @@ body, div{
         color: $dark-color;
     }
 }
+
