@@ -68,18 +68,6 @@ h2 {
   position: fixed;
 }
 
-.sidebar::-webkit-scrollbar {
-  background-color: #7ec7ae;
-  width: 8px;
-  border-left: 1px solid #7ec7ae;
-}
-
-.sidebar::-webkit-scrollbar-thumb {
-  background-color: #218173;
-  border: 1px solid #d3dedc;
-  border-radius: 50px;
-}
-
 .sidebar a {
   text-decoration: none;
 }
@@ -360,6 +348,29 @@ nav ul a .icon {
   .col-lg-12 {
     grid-column: span 12;
   }
+}
+
+.scrollbar::-webkit-scrollbar {
+  background-color: #7ec7ae;
+  width: 8px;
+  border-left: 1px solid #7ec7ae;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #218173;
+  border: 1px solid #d3dedc;
+  border-radius: 50px;
+}
+
+.scrollbar.scrollbar-dark::-webkit-scrollbar {
+  background-color: #060606;
+  border-right: 1px solid #060606;
+  border-left: 1px solid #060606;
+}
+
+.scrollbar.scrollbar-dark::-webkit-scrollbar-thumb {
+  background-color: #464646;
+  border: 1px solid #464646;
 }
 
 .table {
