@@ -7,7 +7,7 @@ body{
     color: $dark-color;
     padding: 0;
 }
-body, div{
+body, div, input, label, span, p, table, tr,td,th,tbody,tfoot,thead{
     box-sizing: border-box;
 }
 
@@ -16,6 +16,8 @@ body, div{
 @import "columns";
 @import "scrollbar";
 @import "table";
+@import "form";
+@import "colors";
 
 /*main*/
 .main{
@@ -31,9 +33,11 @@ body, div{
 }
 .panel{
     display: block;
+    position: relative;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0,0,0,0.08);
     padding: 10px 20px;
+    margin-bottom: 20px;
     &-header{
         border-bottom: 1px solid $tertiary-color;
     }
@@ -95,35 +99,33 @@ body, div{
         overflow: hidden;
     }
 } 
-.bg{
-    &__default{
-        background-color: rgba(0,0,0,0.08);
-    }
-    &__green{
-        background-color: $primary-color;
-    }
-    &__danger{
+
+.alert{
+    display: block;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    margin: 20px 0;
+    box-sizing: border-box;
+    position: relative;
+    &.danger, &.error{
         background-color: $error-color;
-    }
-    &__teal{
-        background-color: $teal-color;
-    }
-    &__blue{
-        background-color: $blue-color;
-    }
-    &__yellow{
-        background-color: $yellow-color;
-    }
-    &__orange{
-        background-color: $orange-color;
-    }
-}
-.color{
-    &__white{
         color: $light-color;
     }
-    &__dark{
-        color: $dark-color;
+    &.success{
+        background-color: $primary-color;
+        color: $light-color;
     }
-}
+    &.info{
+        background-color: $teal-color;
+        // color: $light-color;
+        font-weight: 500;
+    }
+    .title-alert{
+        font-weight: 600;
+    }
+    ul{
+        margin: 0;
+    }
 
+    
+}

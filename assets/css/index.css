@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 
-body, div {
+body, div, input, label, span, p, table, tr, td, th, tbody, tfoot, thead {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -141,7 +141,8 @@ nav ul a .icon {
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
-  grid-gap: 15px;
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -406,6 +407,203 @@ nav ul a .icon {
   color: #ffffff;
 }
 
+div, input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.group-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form .form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+.form__label-control {
+  width: 20%;
+  text-align: right;
+  padding: 15px 12px;
+  font-weight: 600;
+}
+
+.form__input {
+  width: 80%;
+  position: relative;
+}
+
+.form__message {
+  padding: 10px 0;
+  width: 100%;
+  font-weight: 600;
+}
+
+.form-control {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  padding: 15px 12px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form__check {
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-left: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+.form__check input {
+  display: none;
+}
+
+.form__check span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.form__check input[type=radio] ~ span {
+  border-radius: 50%;
+}
+
+.form__check:hover input ~ span {
+  background-color: #ccc;
+}
+
+.form__check input:checked ~ span {
+  background-color: #218173;
+}
+
+.form__check span:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form__check input:checked ~ span:after {
+  display: block;
+}
+
+.form__check span:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+select.form-control {
+  display: block;
+  width: 100%;
+}
+
+.bg__default {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.bg__green {
+  background-color: #218173;
+}
+
+.bg__danger {
+  background-color: #f44336;
+}
+
+.bg__teal {
+  background-color: #00bfa5;
+}
+
+.bg__blue {
+  background-color: #0091ea;
+}
+
+.bg__yellow {
+  background-color: #ffa726;
+}
+
+.bg__orange {
+  background-color: #f57f17;
+}
+
+.color__white {
+  color: #fafafa;
+}
+
+.color__dark {
+  color: #202020;
+}
+
+.color__danger {
+  background-color: #f44336;
+}
+
+.color__green {
+  background-color: #218173;
+}
+
+.text-message {
+  display: block;
+}
+
+.text-message.error {
+  color: #f44336;
+}
+
+.text-message.success {
+  color: #218173;
+}
+
+.text-message.info {
+  color: #7ec7ae;
+}
+
 /*main*/
 .main {
   position: relative;
@@ -468,10 +666,12 @@ nav ul a .icon {
 
 .panel {
   display: block;
+  position: relative;
   border-radius: 4px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
   padding: 10px 20px;
+  margin-bottom: 20px;
 }
 
 .panel-header {
@@ -547,39 +747,37 @@ nav ul a .icon {
   overflow: hidden;
 }
 
-.bg__default {
-  background-color: rgba(0, 0, 0, 0.08);
+.alert {
+  display: block;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  margin: 20px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
 }
 
-.bg__green {
-  background-color: #218173;
-}
-
-.bg__danger {
+.alert.danger, .alert.error {
   background-color: #f44336;
-}
-
-.bg__teal {
-  background-color: #00bfa5;
-}
-
-.bg__blue {
-  background-color: #0091ea;
-}
-
-.bg__yellow {
-  background-color: #ffa726;
-}
-
-.bg__orange {
-  background-color: #f57f17;
-}
-
-.color__white {
   color: #fafafa;
 }
 
-.color__dark {
-  color: #202020;
+.alert.success {
+  background-color: #218173;
+  color: #fafafa;
+}
+
+.alert.info {
+  background-color: #00bfa5;
+  font-weight: 500;
+}
+
+.alert .title-alert {
+  font-weight: 600;
+}
+
+.alert ul {
+  margin: 0;
 }
 /*# sourceMappingURL=index.css.map */

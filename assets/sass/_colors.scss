@@ -1,0 +1,50 @@
+.bg{
+    &__default{
+        background-color: rgba(0,0,0,0.08);
+    }
+    &__green{
+        background-color: $primary-color;
+    }
+    &__danger{
+        background-color: $error-color;
+    }
+    &__teal{
+        background-color: $teal-color;
+    }
+    &__blue{
+        background-color: $blue-color;
+    }
+    &__yellow{
+        background-color: $yellow-color;
+    }
+    &__orange{
+        background-color: $orange-color;
+    }
+}
+.color{
+    &__white{
+        color: $light-color;
+    }
+    &__dark{
+        color: $dark-color;
+    }
+    &__danger{
+        background-color: $error-color;
+    }
+    &__green{
+        background-color: $primary-color;
+    }
+}
+
+.text-message{
+    display: block;
+    &.error{
+        color: $error-color;
+    }
+    &.success{
+        color: $primary-color;
+    }
+    &.info{
+        color: $secundary-color;
+    }
+}
