@@ -17,7 +17,9 @@ body, div, input, label, span, p, table, tr,td,th,tbody,tfoot,thead{
 @import "scrollbar";
 @import "table";
 @import "form";
+@import "elements";
 @import "colors";
+
 
 /*main*/
 .main{
@@ -28,6 +30,7 @@ body, div, input, label, span, p, table, tr,td,th,tbody,tfoot,thead{
     width: calc(100% - #{$sidebaropen});
 }
 @import "topbar";
+
 .container{
     padding: 20px;
 }
@@ -47,11 +50,6 @@ body, div, input, label, span, p, table, tr,td,th,tbody,tfoot,thead{
 }
 .no-padding{
     padding: 0;
-}
-.btn{
-    background-color: $primary-color;
-    color: $light-color;
-    border-radius: 4px;
 }
 
 .card{
@@ -84,48 +82,18 @@ body, div, input, label, span, p, table, tr,td,th,tbody,tfoot,thead{
         font-weight: 600;
         color: $dark-color;
         display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .card__bg{
+        border-radius: 0 0 10px 10px;
+        border: 0;
+        color: $dark-color;
     }
 
     min-height: 120px;
     position: relative;
-    
-    &.card-item{
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 0 0 0;
-        border-radius: 10px;
-        overflow: hidden;
-    }
+    padding: 10px 0 0 0;
+    border-radius: 10px;
+    overflow: hidden;
 } 
-
-.alert{
-    display: block;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.08);
-    margin: 20px 0;
-    box-sizing: border-box;
-    position: relative;
-    &.danger, &.error{
-        background-color: $error-color;
-        color: $light-color;
-    }
-    &.success{
-        background-color: $primary-color;
-        color: $light-color;
-    }
-    &.info{
-        background-color: $teal-color;
-        // color: $light-color;
-        font-weight: 500;
-    }
-    .title-alert{
-        font-weight: 600;
-    }
-    ul{
-        margin: 0;
-    }
-
-    
-}

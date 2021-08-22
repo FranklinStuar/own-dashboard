@@ -21,30 +21,118 @@
         background-color: $orange-color;
     }
 }
-.color{
-    &__white{
-        color: $light-color;
-    }
-    &__dark{
-        color: $dark-color;
-    }
-    &__danger{
-        background-color: $error-color;
-    }
-    &__green{
-        background-color: $primary-color;
-    }
-}
 
-.text-message{
-    display: block;
+a, .color, .text-message{
+    
+    &.danger{
+        color: $orange-color;
+    }
     &.error{
         color: $error-color;
+    }
+    &.teal{
+        color: $teal-color;
+    }
+    &.blue{
+        color: $blue-color;
+    }
+    &.dark{
+        color: $dark-color;
     }
     &.success{
         color: $primary-color;
     }
-    &.info{
-        color: $secundary-color;
+    &.white{
+        color: $light-color;
+        font-size: $font-size-text;
+    }
+}
+
+
+.btn, .badge, .alert{
+    color: $dark-color;
+    border: 1px solid rgba($dark-color, 0.1);
+    background: $light-color;
+    &:hover{
+        background: rgba($dark-color  , 0.1);
+    }
+    &--danger{
+        background: $orange-color;
+        border: 1px solid rgba($orange-color, 0.8);;
+        color: $light-color;
+    }
+    &--danger:hover{
+        background: rgba($orange-color, 0.8);
+    }
+    &--error{
+        background: $error-color;
+        border: 1px solid rgba($error-color, 0.8);
+        color: $light-color;
+    }
+    &--error:hover{
+        background: rgba($error-color, 0.8);
+    }
+    &--teal{
+        background: $teal-color;
+        color: $light-color;
+        border: 1px solid rgba($teal-color, 0.8);
+    }
+    &--teal:hover{
+        background: rgba($teal-color, 0.8);
+    }
+    &--blue{
+        background: $blue-color;
+        border: 1px solid rgba($blue-color, 0.8);
+        color: $light-color;
+    }
+    &--blue:hover{
+        background: rgba($blue-color, 0.8);
+    }
+    &--success{
+        background: $primary-color;
+        border: 1px solid rgba($primary-color, 0.8);
+        color: $light-color;
+    }
+    &--success:hover{
+        background: rgba($primary-color, 0.8);
+    }
+    &--dark{
+        background: $dark-color;
+        border: 1px solid rgba($dark-color, 0.8);
+        color: $light-color;
+    }
+    &--dark:hover{
+        background: rgba($dark-color, 0.8);
+        color: $light-color;
+    }
+}
+.panel, .card{
+    &__bg{
+        color: $dark-color;
+        background: $light-color;
+    }
+    &--danger &__bg{
+        background: $orange-color;
+        color: $light-color;
+    }
+    &--error &__bg{
+        background: $error-color;
+        color: $light-color;
+    }
+    &--teal &__bg{
+        background: $teal-color;
+        color: $light-color;
+    }
+    &--blue &__bg{
+        background: $blue-color;
+        color: $light-color;
+    }
+    &--success &__bg{
+        background: $primary-color;
+        color: $light-color;
+    }
+    &--dark &__bg{
+        background: $dark-color;
+        color: $light-color;
     }
 }

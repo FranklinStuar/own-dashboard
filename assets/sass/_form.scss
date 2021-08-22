@@ -74,7 +74,7 @@ div,input{
         }
         /* On mouse-over, add a grey background color */
         &:hover input ~ span {
-            background-color: #ccc;
+            background-color: rgba($dark-color, 0.1);
         }
         
         /* When the checkbox is checked, add a blue background */

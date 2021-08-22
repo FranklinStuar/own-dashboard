@@ -1,0 +1,45 @@
+a{
+    text-decoration: none;
+    color: $blue-color;
+}
+hr{
+    border-color: rgba($dark-color, 0.1);
+    margin: 15px 0;
+}
+.alert{
+    display: block;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    margin: 20px 0;
+    box-sizing: border-box;
+    position: relative;
+    .title-alert{
+        font-weight: 600;
+    }
+    ul{
+        margin: 0;
+    }
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    
+    &--sm{
+        padding: 2px 5px;
+        font-size: $font-size-accent - 2px;
+    }
+}
+
+.badge{
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: $font-size-text - 2px;
+}
+
+.text-message{
+    display: block;
+}

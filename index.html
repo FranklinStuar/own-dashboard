@@ -132,40 +132,40 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 col-3 panel card card-item"> <!--Block-->
+                <div class="col-sm-4 col-3 panel card card--success"> <!--Block-->
                     <span class="card__icon">
                         <i class="card__i fas fa-dollar-sign"></i>
                     </span>
                     <div class="card__body">
                         <strong class="card-body__price">$1200,00</strong>
-                        <span class="card-body__title bg__green">Ventas</span>
+                        <span class="card-body__title card__bg">Ventas</span>
                     </div>
                 </div> <!--end block-->
-                <div class="col-sm-4 col-3 panel card card-item"> <!--Block-->
+                <div class="col-sm-4 col-3 panel card card--danger"> <!--Block-->
                     <span class="card__icon">
                         <i class="card__i fas fa-dollar-sign"></i>
                     </span>
                     <div class="card__body">
                         <strong class="card-body__price">$1200,00</strong>
-                        <span class="card-body__title bg__blue">Ventas</span>
+                        <span class="card-body__title card__bg">Ventas</span>
                     </div>
                 </div> <!--end block-->
-                <div class="col-sm-4 col-3 panel card card-item"> <!--Block-->
+                <div class="col-sm-4 col-3 panel card card--error"> <!--Block-->
                     <span class="card__icon">
                         <i class="card__i fas fa-dollar-sign"></i>
                     </span>
                     <div class="card__body">
                         <strong class="card-body__price">$1200,00</strong>
-                        <span class="card-body__title bg__orange">Ventas</span>
+                        <span class="card-body__title card__bg">Ventas</span>
                     </div>
                 </div> <!--end block-->
-                <div class="col-sm-4 col-3 panel card card-item"> <!--Block-->
+                <div class="col-sm-4 col-3 panel card card--blue"> <!--Block-->
                     <span class="card__icon">
                         <i class="card__i fas fa-dollar-sign"></i>
                     </span>
                     <div class="card__body">
                         <strong class="card-body__price">$1200,00</strong>
-                        <span class="card-body__title bg__teal">Ventas</span>
+                        <span class="card-body__title card__bg">Ventas</span>
                     </div>
                 </div> <!--end block-->
             </div>
@@ -173,13 +173,13 @@
                 <div class="col-6 col-sm-12">
                     <div class="panel">
                         <div class="panel-header"><h2>Hola Mundo</h2></div>
-                        <div class="panel-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora incidunt velit sunt natus fugit facere, voluptates deleniti, <a href="#">recusandae numquam architecto alias provident tenetur.</a> Repellendus veniam porro, corrupti alias doloremque expedita?</div>
+                        <div class="panel-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <a href="#" class="error">Tempora incidunt velit</a> sunt natus fugit facere, voluptates deleniti, <a href="#">recusandae numquam architecto alias provident tenetur.</a> Repellendus veniam porro, corrupti alias doloremque expedita?</div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-12">
                     <div class="panel">
                         <div class="panel-header"><h2>Hola Mundo</h2></div>
-                        <div class="panel-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora incidunt velit sunt natus fugit facere, voluptates deleniti, recusandae numquam architecto alias provident tenetur. Repellendus veniam porro, corrupti alias doloremque expedita?</div>
+                        <div class="panel-body"><a href="#" class="success">Lorem ipsum,</a> dolor sit amet consectetur adipisicing elit. <a href="#" class="teal">Tempora incidunt velit sunt natus</a> fugit facere, voluptates deleniti, recusandae numquam <a href="#" class="danger">architecto alias provident</a> tenetur. Repellendus veniam porro, corrupti alias doloremque expedita?</div>
                     </div>
                 </div>
                 <div class="col-6">
@@ -257,9 +257,12 @@
                 <div class="col-6">
                     <div class="panel">
                         <div class="alert">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                        <div class="alert success">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                        <div class="alert info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                        <div class="alert error">
+                        <div class="alert alert--success">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="alert alert--teal">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="alert alert--dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="alert alert--blue">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="alert alert--danger">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="alert alert--error">
                             <span class="title-alert">Error:</span>
                             <ul>
                                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
@@ -270,7 +273,7 @@
                         <div class="form__message">
                             <small class="text-message error">Error: Lorem ipsum dolor sit amet, consectetur adipisicing elit</small>
                             <small class="text-message success">Error: Lorem ipsum dolor sit amet, consectetur adipisicing elit</small>
-                            <small class="text-message info">Error: Lorem ipsum dolor sit amet, consectetur adipisicing elit</small>
+                            <small class="text-message blue ">Error: Lorem ipsum dolor sit amet, consectetur adipisicing elit</small>
                             <small class="text-message ">Error: Lorem ipsum dolor sit amet, consectetur adipisicing elit</small>
                         </div>
                     </div>
@@ -371,6 +374,38 @@
                                 </div>
                             </div>
                         </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="panel">
+                        <button class="btn">Default</button>
+                        <button class="btn btn--danger">Default</button>
+                        <button class="btn btn--error">Default</button>
+                        <button class="btn btn--success">Default</button>
+                        <button class="btn btn--teal">Teal</button>
+                        <button class="btn btn--blue">Default</button>
+                        <button class="btn btn--dark">Default</button>
+                        <hr>
+                        <a href="#" class="btn">Default</a>
+                        <a href="#" class="btn btn--danger">Default</a>
+                        <a href="#" class="btn btn--error">Default</a>
+                        <a href="#" class="btn btn--success">Default</a>
+                        <a href="#" class="btn btn--teal">Default</a>
+                        <a href="#" class="btn btn--blue">Default</a>
+                        <a href="#" class="btn btn--dark btn--sm">Default</a>
+                        <hr>
+                        
+                        <span class="badge">Active</span>
+                        <span class="badge badge--danger">Danger</span>
+                        <span class="badge badge--error">Error</span>
+                        <span class="badge badge--success">Suceess</span>
+                        <span class="badge badge--teal">Teal</span>
+                        <span class="badge badge--blue">Blue</span>
+                        <span class="badge badge--dark">Dark</span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="panel">
                     </div>
                 </div>
             </div>
