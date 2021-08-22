@@ -1,54 +1,3 @@
-.bg{
-    &__default{
-        background-color: rgba(0,0,0,0.08);
-    }
-    &__green{
-        background-color: $primary-color;
-    }
-    &__danger{
-        background-color: $error-color;
-    }
-    &__teal{
-        background-color: $teal-color;
-    }
-    &__blue{
-        background-color: $blue-color;
-    }
-    &__yellow{
-        background-color: $yellow-color;
-    }
-    &__orange{
-        background-color: $orange-color;
-    }
-}
-
-a, .color, .text-message{
-    
-    &.danger{
-        color: $orange-color;
-    }
-    &.error{
-        color: $error-color;
-    }
-    &.teal{
-        color: $teal-color;
-    }
-    &.blue{
-        color: $blue-color;
-    }
-    &.dark{
-        color: $dark-color;
-    }
-    &.success{
-        color: $primary-color;
-    }
-    &.white{
-        color: $light-color;
-        font-size: $font-size-text;
-    }
-}
-
-
 .btn, .badge, .alert{
     color: $dark-color;
     border: 1px solid rgba($dark-color, 0.1);
@@ -106,33 +55,92 @@ a, .color, .text-message{
         color: $light-color;
     }
 }
-.panel, .card{
+.table, .panel, .card{
     &__bg{
-        color: $dark-color;
         background: $light-color;
     }
     &--danger &__bg{
         background: $orange-color;
-        color: $light-color;
     }
     &--error &__bg{
         background: $error-color;
-        color: $light-color;
     }
     &--teal &__bg{
         background: $teal-color;
-        color: $light-color;
     }
     &--blue &__bg{
         background: $blue-color;
-        color: $light-color;
     }
     &--success &__bg{
         background: $primary-color;
-        color: $light-color;
     }
     &--dark &__bg{
         background: $dark-color;
+    }
+    &__bg-hover:hover {
+        background: rgba($dark-color  , 0.1);
+    }
+    &--danger &__bg-hover:hover{
+        background: rgba($orange-color, 0.8);
+    }
+    &--error &__bg-hover:hover{
+        background: rgba($error-color, 0.8);
+    }
+    &--teal &__bg-hover:hover{
+        background: rgba($teal-color, 0.8);
+    }
+    &--blue &__bg-hover:hover{
+        background: rgba($blue-color, 0.8);
+    }
+    &--success &__bg-hover:hover{
+        background: rgba($primary-color, 0.8);
+    }
+    &--dark &__bg-hover:hover{
+        background: rgba($dark-color, 0.8);
+    }
+}
+
+.text-color{
+    &--danger{
+        color: $orange-color;
+    }
+    &--error{
+        color: $error-color;
+    }
+    &--teal{
+        color: $teal-color;
+    }
+    &--blue{
+        color: $blue-color;
+    }
+    &--dark{
+        color: $dark-color;
+    }
+    &--success{
+        color: $primary-color;
+    }
+    &--white{
+        color: $light-color;
+    }
+    &--danger-hover:hover{
+        color: $orange-color;
+    }
+    &--error-hover:hover{
+        color: $error-color;
+    }
+    &--teal-hover:hover{
+        color: $teal-color;
+    }
+    &--blue-hover:hover{
+        color: $blue-color;
+    }
+    &--dark-hover:hover{
+        color: $dark-color;
+    }
+    &--success-hover:hover{
+        color: $primary-color;
+    }
+    &--white-hover:hover{
         color: $light-color;
     }
 }

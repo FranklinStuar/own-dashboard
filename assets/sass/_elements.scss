@@ -24,6 +24,7 @@ hr{
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
+    margin: 5px;
     border-radius: 4px;
     outline: none;
     cursor: pointer;
@@ -42,4 +43,7 @@ hr{
 
 .text-message{
     display: block;
+}
+.no-padding{
+    padding: 0;
 }

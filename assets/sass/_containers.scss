@@ -1,0 +1,65 @@
+
+.container{
+    position: relative;
+    padding: 20px;
+}
+.panel{
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    &-header{
+        border-bottom: 1px solid $tertiary-color;
+    }
+    &-body{
+        padding: 10px 0;
+    }
+}
+.card{
+    position: relative;
+    &__body{
+        width: 100%;
+    }
+    &__icon{
+        display: block;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.8em;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: $fivetiary-color;
+    }
+    &-body__price{
+        display: block;
+        font-size: 30px;
+        color: $dark-color;
+        text-align: center;
+        width: 100%;
+        line-height: 80px;
+    }
+    &-body__title{
+        line-height: 40px;
+        text-align: center;
+        font-weight: 600;
+        color: $dark-color;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .card__bg{
+        border-radius: 0 0 10px 10px;
+        border: 0;
+        color: $dark-color;
+    }
+
+    min-height: 120px;
+    position: relative;
+    padding: 10px 0 0 0;
+    border-radius: 10px;
+    overflow: hidden;
+} 
